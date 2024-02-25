@@ -6,7 +6,7 @@ It provides methods to improve the security of Azure resources through RBAC and 
 > Cloud security is a common responsibility shared between Microsoft Azure and a customer/consumer.
 > It is our responsibility to correctly configure resource security.
 
-## “Creating a New User in Your Azure Account
+## Creating a New User in Your Azure Account
 
 The Owner (administrator) account has far more permissions than are needed for everyday development tasks.  
 We need to create a new user account for a developer with just enough permissions to complete assigned tasks.
@@ -17,7 +17,7 @@ First, we need to create a new user in our Azure Active Directory (Azure AD).
 Then assign the Contributor role-based access control (RBAC) role to that user, 
 so enough permissions are assigned without granting this user the same permission level as the Owner.
 
-## “Creating a New Custom Role for Our User
+## Creating a New Custom Role for Our User
 
 We need to grant a limited set of permissions to a user, group, or Azure AD principal.  
 There is no built-in Azure RBAC role that offers these exact permissions.
@@ -37,7 +37,7 @@ Our test user has both Contributor and Custom Storage Data Reader assigned.
 In real-world scenarios, we will need to remove the Contributor role from a user, 
 because it gives many more permissions compared to the custom role.
 
-## “Assigning Allowed Azure Resource Types in a Subscription
+## Assigning Allowed Azure Resource Types in a Subscription
 
 WE need to limit the Azure resource types that subscription users can create.
 
@@ -51,7 +51,7 @@ Assign the "Allowed resource type" **Azure Policy** to
 
 with the list of allowed resource types as the policy parameter.
 
-## “Assigning Allowed Locations for Azure Resources
+## Assigning Allowed Locations for Azure Resources
 
 We need to limit the locations (regions) Azure resource can be provisioned in.
 
@@ -109,7 +109,7 @@ Set the `--allow-shared-key-access` flag to false programmatically,
 or set the "Allow storage account key access" field to Disabled in the Azure portal.  
 This can be configured for both new and existing storage accounts.
 
-### “Discussion
+### Discussion
 
 Azure storage accounts support multiple authorization methods, which fall into two groups:
 
