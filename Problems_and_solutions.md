@@ -1,4 +1,10 @@
-# Problems
+# Problems & Solutions
+
+---
+
+# Chapter 1: Security
+
+It provides methods to improve the security of Azure resources through RBAC and network firewalls.
 
 ## Connecting to a Private Azure Virtual Machine Using Azure Bastion
 
@@ -76,3 +82,47 @@ Check the [WAF features documentation](https://learn.microsoft.com/en-us/azure/w
 ### Documentation
 
 - [Azure Web Application Firewall (WAF) policy overview](https://learn.microsoft.com/en-us/azure/web-application-firewall/ag/policy-overview)
+
+# Chapter 2: Networking
+
+It reviews Azure Virtual Network (VNet) security, routing, and monitoring.
+
+# Chapter 3: Storage
+
+It provides recipes for Azure storage accounts, 
+enabling us to optimize cost, secure  data, and protect it against accidental deletion.
+
+# Chapter 4: Persisting Data
+
+It provides guidelines to configure and protect 
+the main Azure relational and NoSQL databases, Azure SQL and Azure Cosmos DB.
+
+# Chapter 5: Messaging and Events
+
+It enables us to set up reliable messaging between services and solutions using Azure’s messaging suite of services.
+
+# Chapter 6: Big Data
+
+It introduces Azure services, including Azure Stream Analytics, Azure Synapse Analytics, 
+Azure Databricks, and Azure Data Factory, designed to mine insights from your big data.
+
+# Chapter 7: Azure Functions and Serverless Services
+
+It provides recipes to implement microservices using Azure Function Apps.
+
+# Chapter 8: Azure App Service
+
+It provides recipes to configure autoscaling, secure network access, and deploy App Services using several methods.
+
+# Chapter 9: Containers
+
+It introduces Azure services designed to host and run containerized applications in Azure.
+
+# Chapter 10: Azure Cognitive Services
+
+It helps us develop smart applications by using Azure Cognitive Services.  
+Recipes in this chapter enable us to gain insights from images, audio, and text content using AI-backed services.
+
+# Chapter 11: Management and Monitoring
+
+It introduces tools to monitor and control Azure service costs and then reviews Azure Monitor platform logs.
