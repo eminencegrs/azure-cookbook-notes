@@ -11,7 +11,7 @@ At the core of this infrastructure sits **Azure Virtual Network**.
 
 ## Creating an Isolated Private Network by Provisioning an Azure Virtual Network
 
-You need to create an isolated private network in Azure to protect your resources 
+We need to create an isolated private network in Azure to protect your resources 
 from requests originated from unwanted networks and IP addresses.
 
 ### Solution
@@ -29,3 +29,33 @@ Many Azure resources support virtual network integration.
 Use the virtual network integration feature to isolate those resources from public networks and the internet. 
 For instance, we can configure a Cosmos DB database to accept requests only from a specific Virtual network. 
 This protects our database from unwanted clients and attackers, and improves our Azure subscription security posture.
+
+## Creating a Network Layout in Azure Virtual Networks Using Subnets
+
+We want to divide your Azure VNet into several subnetworks (subnets) for organization, 
+and security. Later you will deploy Azure resources into these subnets.
+
+### Solution
+
+Create one or more subnets in your Azure VNet. 
+Then, multiple resources can be placed into these subnets.
+
+### Discussion
+
+Azure subnets are the main Azure network security pillar. 
+Resources such as VMs should be deployed to an Azure subnet. 
+Other Azure resources, such as Azure App Service Environment, 
+Azure API Management, Azure Functions Premium, and more 
+can be deployed to subnets. 
+Almost all Azure network security services such as Azure Firewall, 
+network security groups (NSGs), and Azure route tables 
+are designed to work with Azure subnets.
+
+Before creating a new subnet in your VNet, 
+make sure you know which IP ranges are already taken by existing subnets, 
+and choose the next available free range. 
+Subnets within the same Azure VNet can’t have any overlapping address. 
+You can resize deployed Azure subnets, 
+if there is available growing space in the parent VNet. 
+It is a good practice to understand how big your subnet needs to be 
+and allocate the right address space in the first place.
