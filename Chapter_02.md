@@ -59,3 +59,18 @@ You can resize deployed Azure subnets,
 if there is available growing space in the parent VNet. 
 It is a good practice to understand how big your subnet needs to be 
 and allocate the right address space in the first place.
+
+## Routing Network Traffic Using User-Defined Routes
+
+You need to route outgoing subnet traffic to Azure and/or on-premises networks and/or internet resources.
+
+### Solution
+
+Create an Azure route table, add one or more custom routes to it, and associate the new route table with your subnets.
+
+### Discussion
+
+Microsoft Azure automatically creates a system (default) route table for each subnet and adds system default routes to it. You can’t update or delete these routes, but you can override them. In this recipe, you learned how to override these system routes by creating and assigning a custom route table.
+
+One of the main use cases for custom routes (route tables) is to forward all the outgoing subnet traffic to a virtual appliance such as the Azure Firewall service. This enables you to monitor, secure, and limit the subnet traffic.
+
