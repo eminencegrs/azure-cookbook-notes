@@ -74,3 +74,12 @@ Microsoft Azure automatically creates a system (default) route table for each su
 
 One of the main use cases for custom routes (route tables) is to forward all the outgoing subnet traffic to a virtual appliance such as the Azure Firewall service. This enables you to monitor, secure, and limit the subnet traffic.
 
+## Securing Azure Virtual Networks with Azure Firewall
+
+You need to improve your Azure network infrastructure security by forwarding all the egress subnet traffic to Azure Firewall.
+
+### Solution
+
+Provision a new Azure Firewall resource and use a route table to forward all the egress subnet traffic to the Azure Firewall.
+
+### Discussion
