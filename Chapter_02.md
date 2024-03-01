@@ -115,4 +115,14 @@ Using NSG security rules, we can allow or deny both inbound (ingress) and outbou
 The priority can be between 100 and 4096. Rules with lower numbers have higher priority and will be processed first. 
 Imagine we deployed a web server Azure VM into our subnet and so need to allow for inbound traffic on  ports 80 and 443.
 
+### Discussion
+
+In this recipe, we created a new NSG and assigned it to a subnet. 
+NSGs provide basic protection based on source and destination IP address and port numbers. 
+One NSG can be assigned to multiple subnets, but each subnet can have only one NSG assigned.
+
+In “Securing Azure Virtual Networks with Azure Firewall”, we set up Azure Firewall, which is a more sophisticated service. 
+We can use NSGs along with Azure Firewall to provide extra protection for your subnets. 
+If unwanted traffic goes through one, the next will block it, providing defense in depth for our Azure network.
+
 
