@@ -102,3 +102,17 @@ Finally, if you need to allow outgoing traffic for HTTP, HTTPS, or MSSQL protoco
 
 Azure Firewall also offers threat intelligence-based filtering to alert and/or deny traffic from Microsoft’s list of malicious IP addresses, fully qualified domain names, and URLs.
 
+## Securing Azure Virtual Networks with Network Security Groups
+
+We need to improve network security by controlling inbound and outbound subnet traffic.
+
+### Solution
+
+Provision a new Azure network security group (NSG) resource and assign it to your subnets.
+
+By default, all traffic is blocked by Azure NSGs. 
+Using NSG security rules, we can allow or deny both inbound (ingress) and outbound (egress) subnet traffic. 
+The priority can be between 100 and 4096. Rules with lower numbers have higher priority and will be processed first. 
+Imagine we deployed a web server Azure VM into our subnet and so need to allow for inbound traffic on  ports 80 and 443.
+
+
