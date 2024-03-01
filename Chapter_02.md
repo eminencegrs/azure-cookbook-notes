@@ -83,3 +83,18 @@ You need to improve your Azure network infrastructure security by forwarding all
 Provision a new Azure Firewall resource and use a route table to forward all the egress subnet traffic to the Azure Firewall.
 
 ### Discussion
+
+In this recipe, we used Azure Firewall to inspect egress traffic from an Azure VNet subnet. By default, all traffic is blocked unless there is a matching firewall rule for it. See the Azure Firewall rule processing logic documentation for details. As you saw, there are three sets of Azure Firewall classic rules:
+
+**DNAT rules**
+
+For inbound traffic into your subnets. DNAT rules will be processed first.
+
+**Network rules**
+
+For outgoing traffic from your subnets. You can allow or block traffic based on IP address and port number. Network rules are processed after DNAT rules.
+
+**Application rules**
+
+Finally, if you need to allow outgoing traffic for HTTP, HTTPS, or MSSQL protocols, use these rules. Application rules are processed last.
+
