@@ -125,4 +125,11 @@ In “Securing Azure Virtual Networks with Azure Firewall”, we set up Azure Fi
 We can use NSGs along with Azure Firewall to provide extra protection for your subnets. 
 If unwanted traffic goes through one, the next will block it, providing defense in depth for our Azure network.
 
+## Connecting Two Azure VNets Using Azure Network Peering
+
+You want resources in two separate Azure VNets configured so that they will be able to communicate with each other.
+
+### Solution
+
+Create two new Azure network peering resources between your two Azure VNets, so that the resources in the two  VNets can see one another.
 
