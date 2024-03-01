@@ -98,3 +98,7 @@ For outgoing traffic from your subnets. You can allow or block traffic based on 
 
 Finally, if you need to allow outgoing traffic for HTTP, HTTPS, or MSSQL protocols, use these rules. Application rules are processed last.
 
+> You can optionally use an Azure Firewall Policy instead of directly defining rules in the Azure Firewall resource. This policy can then be assigned to one or more Azure Firewall instances.
+
+Azure Firewall also offers threat intelligence-based filtering to alert and/or deny traffic from Microsoft’s list of malicious IP addresses, fully qualified domain names, and URLs.
+
