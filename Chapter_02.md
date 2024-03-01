@@ -133,3 +133,6 @@ You want resources in two separate Azure VNets configured so that they will be a
 
 Create two new Azure network peering resources between your two Azure VNets, so that the resources in the two  VNets can see one another.
 
+> **Important:**  
+> To create network peering, an account should have the Network Contributor role assigned over both Azure VNets.
+
