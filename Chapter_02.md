@@ -136,3 +136,22 @@ Create two new Azure network peering resources between your two Azure VNets, so 
 > **Important:**  
 > To create network peering, an account should have the Network Contributor role assigned over both Azure VNets.
 
+## Verifying Azure VNet Connectivity Using Azure Network Watcher
+
+You need to monitor or verify network connectivity between an Azure VM 
+and other destinations, such as the internet or another VM.
+
+### Solution
+
+Create an Azure Network Watcher connection monitor and use it to verify connectivity between your IaaS (infrastructure as a service) endpoints.
+
+### Discussion
+
+> **Important:**
+> Azure Network Watcher is only intended for IaaS resources such as Azure VMs. 
+> This service does not support Azure PaaS (platform as a service) services such as App Services as the source resource.
+
+### Documentation
+
+[What is Azure Network Watcher?](https://learn.microsoft.com/en-us/azure/network-watcher/network-watcher-overview)
+
