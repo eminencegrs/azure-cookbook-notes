@@ -56,4 +56,19 @@ You need to limit Azure storage account network access to one or more Azure VNet
 
 Make sure the Public Network Access setting is enabled for your storage account. Then define a network access rule to permit traffic from one or more Azure VNets.
 
+### Discussion
+
+There are three different network access scenarios for an Azure storage account:
+
+- Allow traffic from all public and private networks (including the internet)
+- Allow traffic only from specific Azure VNets
+- Allow traffic only from private endpoints with no public network access
+
+The first option is the default behavior when you create a new storage account, unless you explicitly configure other network access settings.
+In this recipe, we covered the second option, which allows traffic from one or more VNets. Keep in mind that in this case the traffic still goes through the public internet.
+If you need your traffic to only go through Azure’s private backbone network, you need to choose the third option to configure private endpoints. Check the Azure Storage networking documentation for details.
+
+### Documentation
+
+- [Virtual Network service endpoints](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-service-endpoints-overview)
 
