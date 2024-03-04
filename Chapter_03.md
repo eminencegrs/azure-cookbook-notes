@@ -71,4 +71,6 @@ If you need your traffic to only go through Azure’s private backbone network, 
 ### Documentation
 
 - [Virtual Network service endpoints](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-service-endpoints-overview)
+- [What is private endpoint](https://learn.microsoft.com/en-us/azure/private-link/private-endpoint-overview)
+- [Configure Azure Storage firewalls and virtual networks](https://learn.microsoft.com/en-us/azure/storage/common/storage-network-security?tabs=azure-portal)
 
