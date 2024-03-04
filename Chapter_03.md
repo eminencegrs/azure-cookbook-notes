@@ -48,4 +48,12 @@ security commitments or compliance needs, it’s fine to use the default Microso
 
 Keep in mind that when customer-managed keys are enabled for your storage account, Azure Storage queues and tables are not automatically protected by those keys. If needed, you can configure these services to be included in the CMK encryption when you create your storage account. See the Azure documentation for details.
 
+## Controlling Azure Storage Network Access
+
+You need to limit Azure storage account network access to one or more Azure VNets.
+
+### Solution
+
+Make sure the Public Network Access setting is enabled for your storage account. Then define a network access rule to permit traffic from one or more Azure VNets.
+
 
