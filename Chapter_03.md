@@ -74,3 +74,10 @@ If you need your traffic to only go through Azure’s private backbone network, 
 - [What is private endpoint](https://learn.microsoft.com/en-us/azure/private-link/private-endpoint-overview)
 - [Configure Azure Storage firewalls and virtual networks](https://learn.microsoft.com/en-us/azure/storage/common/storage-network-security?tabs=azure-portal)
 
+## Granting Limited Access to Azure Storage Using SAS Tokens
+
+You need a way to grant granular access to Azure Storage services.
+
+### Solution
+
+Instead of Azure Storage Keys, which grant full access, generate shared access signature (SAS) tokens with the desired access and share them with client applications and users.
